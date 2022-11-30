@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-
-
-    >
+    tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/ET1"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="CAD"
+        android:id="@+id/TV1"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:ems="5"
-
+        android:hint="CAD"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         />
-
-
     <EditText
-        android:id="@+id/ET2"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="CAD"
+        android:id="@+id/TV2"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:ems="5"
-
-        />
-
-    <Button
-        android:id="@+id/Btn1"
-        android:layout_width="166dp"
-        android:layout_height="wrap_content"
+        android:hint="USD"
+        android:inputType="number"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Convert"
 
         />
+    <Button
+        android:id="@+id/BtnConv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
 
 </LinearLayout>
